@@ -76,6 +76,12 @@
             Function newLHS = LHS().GetSimplifiedFunction();
             Function newRHS = RHS().GetSimplifiedFunction();
 
+            if(newRHS.GetID() == FNeg.ID)
+            {
+                Function Fnew = new FAdd(newLHS, ((FNeg)newRHS).Operand());
+                return Fnew.GetSimplifiedFunction();
+            }
+
 			if (newLHS.isConstant && newRHS.isConstant)
 			{
 				return new FCons(newLHS.GetValue() - newRHS.GetValue());

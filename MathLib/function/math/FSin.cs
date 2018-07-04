@@ -56,7 +56,18 @@ namespace function.math
 
         public override Function GetSimplifiedFunction()
         {
-            throw new NotImplementedException();
+            Function newOperand = Operand().GetSimplifiedFunction();
+
+            if (newOperand.GetID() == FCons.ID)
+            {
+                if (newOperand.GetValue() == 0)
+                {
+                    return new FCons(0);
+                }
+
+            }
+
+            return new FSin(newOperand);
         }
 
         public override bool EqualsSymbolically(Function F)
