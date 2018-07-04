@@ -22,7 +22,7 @@ public class Test
         {
             case (1): MathPrograms.FunctionSimplifier(); break;
             case (2): MathPrograms.SimpleDerivativeComputer(); break;
-            default: Console.WriteLine("Invalid Choice.");
+            //default: Console.WriteLine("Invalid Choice.");
         }
 
         Console.ReadKey();
