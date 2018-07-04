@@ -22,8 +22,8 @@ public class Test
         {
             case (1): MathPrograms.FunctionSimplifier(); break;
             case (2): MathPrograms.SimpleDerivativeComputer(); break;
-            //default: Console.WriteLine("Invalid Choice.");
-            default: Console.WriteLine("Error"); break;
+            default: Console.WriteLine("Invalid Choice."); break;
+            //default: Console.WriteLine("Error"); break;
         }
 
         Console.ReadKey();
