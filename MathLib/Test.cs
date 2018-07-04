@@ -11,7 +11,7 @@ public class Test
         Console.WriteLine("Available Programs:");
         Console.WriteLine(">>>>>>>>>>>>>>>>>>>>");
 
-        Console.WriteLine   (   "(1) Derivative Computer" + "\n" +
+        Console.WriteLine   (   "(1) Function Simplifier" + "\n" +
                                 "(2) Derivative Computer" + "\n" +
                                 ""
                             );
