@@ -130,9 +130,28 @@ namespace function.math
                     return new FCons(1);
                 }
 
+                if(newExponent.GetValue() == 1)
+                {
+                    return newBase;
+                }
+
                 if (((FCons)newBase).IsInteger() && ((FCons)newExponent).IsInteger())
                 {
                     return new FCons(GetValue());
+                }
+            }
+
+
+            if (newExponent.isConstant)
+            {
+                if (newExponent.GetValue() == 0)
+                {
+                    return new FCons(1);
+                }
+
+                if (newExponent.GetValue() == 1)
+                {
+                    return newBase;
                 }
             }
 
